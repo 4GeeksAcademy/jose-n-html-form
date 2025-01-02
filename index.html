@@ -29,17 +29,17 @@
         <div class="row mb-2">
             <div class="col-5">
                 <label for="card">Card #</label><br>
-                <input type="text" name="card" id="card" placeholder="XXXXXXXXXXXXXXXX" class="w-100">
+                <input type="number" name="card" id="card" placeholder="XXXXXXXXXXXXXXXX" class="w-100">
             </div>
             <div class="col-3">
                 <label for="cvc">CVC #</label><br>
-                <input type="number" name="cvc" id="cvc" placeholder="0000" class="w-100">
+                <input type="number" name="cvc" id="cvc" inputmode="numeric" placeholder="0000" class="w-100">
             </div>
             <div class="col-4">
                 <label for="amount">Amount</label><br>
-                <div class="input-group pe-5">
-                    <span class="input-group-text fw-bold">$</span>
-                    <input type="text" name="amount" id="amount" placeholder="Amount" class="w-75">
+                <div class="input-group w-100">
+                    <label for="amount" class="fw-bold me-1">$</label>
+                    <input type="number" name="amount" id="amount" placeholder="Amount" class="amount-data">
                 </div>
 
             </div>
@@ -75,7 +75,7 @@
 
             <div class="col-3">
                 <label for="zip">Postal Code</label>
-                <input type="text" name="zip" id="zip" class="w-100  mt-1">
+                <input type="number" maxlength="5" name="zip" id="zip" class="w-100  mt-1">
             </div>
         </div>
 
